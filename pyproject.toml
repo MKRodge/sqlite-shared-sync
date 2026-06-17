@@ -26,8 +26,8 @@ dependencies = []   # pure stdlib — zero runtime deps
 dev = ["pytest>=7.0"]
 
 [project.urls]
-"Source" = "https://github.com/markrodgersux/sqlite-shared-sync"
-"Bug Tracker" = "https://github.com/markrodgersux/sqlite-shared-sync/issues"
+"Source" = "https://github.com/MKRodge/sqlite-shared-sync"
+"Bug Tracker" = "https://github.com/MKRodge/sqlite-shared-sync/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
