@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlite-shared-sync"
+version = "0.1.0"
+description = "Bidirectional SQLite sync over a shared drive using ATTACH DATABASE"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [{name = "Mark Rodgers", email = "mark.rodgersux@gmail.com"}]
+requires-python = ">=3.10"
+keywords = ["sqlite", "sync", "shared-drive", "attach", "database", "offline-first"]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Database",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []   # pure stdlib — zero runtime deps
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+"Source" = "https://github.com/markrodgersux/sqlite-shared-sync"
+"Bug Tracker" = "https://github.com/markrodgersux/sqlite-shared-sync/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sqlite_shared_sync*"]
+
+[tool.pytest.ini_options]
+addopts = "-p no:qt"
