@@ -119,3 +119,8 @@ config = SyncConfig(..., on_post_sync=my_hook)
 ## Licence
 
 Apache 2.0 — see [LICENSE](LICENSE).
+
+## Contributing
+
+Issues and pull requests welcome at
+[github.com/MKRodge/sqlite-shared-sync](https://github.com/MKRodge/sqlite-shared-sync).
